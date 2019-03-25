@@ -37,7 +37,7 @@
 
     <div class="container">
         {% for article in articles %}
-            <a href="/blog/{{ article.id }}"><li>{{ article.title }}</li></a>
+            <a href="{{ path("blog.single", { id : article.id })}}"><li>{{ article.title }}</li></a>
         {% endfor %}
     </div>
 

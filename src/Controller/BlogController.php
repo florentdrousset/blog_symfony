@@ -68,12 +68,12 @@ class BlogController extends AbstractController {
         }
 
     /**
-     * @Route("/blog/{id}")
+     * @Route("/blog/{id}", name = "blog.single")
      */
     public function single($id) {
         $repo = $this->getDoctrine()->getRepository(Article::class);
         $article = $repo->find($id);
-        return $this->render("pages/article.html.twig", [
+        return $this->render("pages/single.html.twig", [
             'article' => $article
         ]);
     }
