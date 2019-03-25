@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block title "Article" %} {# syntaxe alternative sans le endblock #}
+{% block body %}
+
+    <p>Bienvenue sur l'article n° {{ article.id }}</p>
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <em>Publié le : {{ article.created_at|date("d/m/y") }}</em>
+
+{% endblock %}

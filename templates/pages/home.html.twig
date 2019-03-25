@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block title "Test" %} {# syntaxe alternative sans le endblock #}
+{% block body %}
+
+<h1>Yeah</h1>
+{{ abc }}
+{% endblock %}
