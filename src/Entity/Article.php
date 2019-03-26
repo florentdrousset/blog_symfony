@@ -53,11 +53,11 @@ class Article {
      * @ORM\Column(type="datetime")
      */
     private $created_at;
-    public function getCreated_at() {
+    public function getCreatedAt() {
         return $this->created_at;
     }
 
-    public function setCreated_at(string $created_at) {
+    public function setCreatedAt($created_at) {
         $this->created_at = $created_at;
     }
 
@@ -65,11 +65,11 @@ class Article {
      * @ORM\Column(type="boolean")
      */
     private $is_published;
-    public function getIs_published() {
+    public function getIsPublished() {
         return $this->is_published;
     }
 
-    public function setIs_published($is_published) {
+    public function setIsPublished($is_published) {
         $this->is_published = $is_published;
     }
 }

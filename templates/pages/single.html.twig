@@ -9,6 +9,6 @@
     <p>Bienvenue sur l'article n° {{ article.id }}</p>
     <h2>{{ article.title }}</h2>
     <p>{{ article.content }}</p>
-    <em>Publié le : {{ article.created_at|date("d/m/y") }}</em>
+    <em>Publié le : {{ article.createdAt|date("d/m/y") }}</em>
 
 {% endblock %}
